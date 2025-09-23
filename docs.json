@@ -13,7 +13,6 @@
     "groups": [
       {
         "group": "Getting started",
-        "icon": "play",
         "expanded": false,
         "pages": [
           "welcome",
@@ -22,8 +21,6 @@
       },
       {
         "group": "Features",
-        "icon": "notebook-text",
-        "tag": "NEW",
         "pages": [
           "chat-mode",
           "inspect-mode",
