@@ -5,8 +5,7 @@
   "description": "Example Co. is a company that provides example content and placeholder text.",
   "colors": {
     "primary": "#7765E2",
-    "light": "#191616",
-    "dark": "#0F172A"
+    "light": "#191616"
   },
   "navigation": {
     "pages": [
