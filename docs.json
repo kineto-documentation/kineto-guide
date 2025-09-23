@@ -14,8 +14,8 @@
     ]
   },
   "logo": {
-    "light": "/logo-light.svg",
-    "dark": "/logo-light.svg",
+    "light": "/images/logo-light.svg",
+    "dark": "/images/logo-light.svg",
     "href": "https://kineto.dev/"
   },
   "navbar": {
