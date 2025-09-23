@@ -5,7 +5,7 @@
   "description": "Example Co. is a company that provides example content and placeholder text.",
   "colors": {
     "primary": "#7765E2",
-    "light": "#07C983",
+    "light": "#7765E2",
     "dark": "#0D9373"
   },
   "navigation": {
@@ -89,14 +89,6 @@
       "key": "example_cookie_key",
       "value": "example_cookie_value"
     }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude"
-    ]
   },
   "errors": {
     "404": {
