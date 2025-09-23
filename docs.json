@@ -8,29 +8,38 @@
     "light": "#7765E2",
     "dark": "#7765E2"
   },
-  
+
   "navigation": {
-    "groups": [
-      {
-        "group": "Getting started",
-        "expanded": false,
-        "pages": [
-          "welcome",
-          "tips"
-        ]
-      },
-      {
-        "group": "Features",
-        "pages": [
-          "chat-mode",
-          "inspect-mode",
-          "meta-layer",
-          "version-history"
-        ]
+  "groups": [
+    {
+      "group": "Getting started",
+      "expanded": false,
+      "pages": [
+        "welcome",
+        "tips"
+      ],
+      "icons": {
+        "welcome": "home",
+        "tips": "lightbulb"
       }
-    ]
-  },
-  
+    },
+    {
+      "group": "Features",
+      "pages": [
+        "chat-mode",
+        "inspect-mode",
+        "meta-layer",
+        "version-history"
+      ],
+      "icons": {
+        "chat-mode": "message-square",
+        "inspect-mode": "scan",
+        "meta-layer": "layers",
+        "version-history": "history"
+      }
+    }
+  ]
+},
   "logo": {
     "light": "/images/logo-light.svg",
     "dark": "/images/logo-light.svg",
