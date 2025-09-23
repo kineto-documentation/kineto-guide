@@ -45,19 +45,7 @@
     "dark": "/images/logo-light.svg",
     "href": "https://kineto.dev/"
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Community",
-        "href": "https://discord.com/invite/WZqyuHtVQa"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Get Started",
-      "href": "https://kineto.dev/"
-    }
-  },
+  
   "footer": {
     "socials": {
       "x": "https://x.com/example",
