@@ -1,18 +1,46 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "aspen",
-  "name": "Example Co.",
+  "name": "Kineto",
   "description": "Example Co. is a company that provides example content and placeholder text.",
   "colors": {
     "primary": "#7765E2",
     "light": "#7765E2",
-    "dark": "#0D9373"
+    "dark": "#7765E2"
   },
+  
   "navigation": {
-    "pages": [
-      "features"
+    "groups": [
+      {
+        "group": "Getting started",
+        "icon": "play",
+        "expanded": false,
+        "pages": [
+          "quickstart",
+          {
+            "group": "Editing",
+            "icon": "pencil",
+            "pages": [
+              "Welcome",
+              "Tips"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Features",
+        "icon": "notebook-text",
+        "tag": "NEW",
+        "pages": [
+          "chat-mode",
+          "inspect-mode",
+          "meta-layer",
+          "version-history"
+        ]
+      }
     ]
   },
+  
   "logo": {
     "light": "/images/logo-light.svg",
     "dark": "/images/logo-light.svg",
@@ -22,13 +50,13 @@
     "links": [
       {
         "label": "Community",
-        "href": "https://example.com/community"
+        "href": "https://discord.com/invite/WZqyuHtVQa"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Get Started",
-      "href": "https://example.com/start"
+      "href": "https://kineto.dev/"
     }
   },
   "footer": {
