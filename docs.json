@@ -32,10 +32,10 @@
         "Credits"
       ],
       "icons": {
-        "chat-mode": "message-square",
-        "inspect-mode": "scan",
-        "meta-layer": "layers",
-        "version-history": "history"
+        "Editing": "message-square",
+        "Publish": "scan",
+        "version-history": "history",
+        "Credits": "Credits"
       }
     }
   ]
