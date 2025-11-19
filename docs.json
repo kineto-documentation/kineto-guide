@@ -26,10 +26,10 @@
     {
       "group": "Features",
       "pages": [
-        "chat-mode",
-        "inspect-mode",
-        "meta-layer",
-        "version-history"
+        "Editing",
+        "Publish",
+        "version-history",
+        "Credits"
       ],
       "icons": {
         "chat-mode": "message-square",
