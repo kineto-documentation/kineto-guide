@@ -29,13 +29,15 @@
         "Editing",
         "Publish",
         "version-history",
-        "Credits"
+        "Credits",
+        "TroubleShooting"
       ],
       "icons": {
         "Editing": "message-square",
         "Publish": "scan",
         "version-history": "history",
-        "Credits": "scan"
+        "Credits": "scan",
+        "TroubleShooting": "scan"
       }
     }
   ]
