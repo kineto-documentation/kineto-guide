@@ -24,20 +24,26 @@
       }
     },
     {
-      "group": "Features",
+      "group": "How to Kineto?",
       "pages": [
+        "First-version",
         "Editing",
-        "Publish",
-        "version-history",
+        "Publishing",
+        "Version-history",
         "Credits",
-        "TroubleShooting"
+        "Features-and-integrations",
+        "TroubleShooting",
+        "FAQ"
       ],
       "icons": {
+        "First-version": "message-square",
         "Editing": "message-square",
-        "Publish": "scan",
-        "version-history": "history",
+        "Publishing": "scan",
+        "Version-history": "history",
         "Credits": "scan",
-        "TroubleShooting": "message-square"
+        "Features-and-integrations": "scan",
+        "TroubleShooting": "message-square",
+        "FAQ": "message-square"
       }
     }
   ]
