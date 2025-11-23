@@ -15,8 +15,7 @@
       "group": "Getting started",
       "expanded": false,
       "pages": [
-        "welcome",
-        "tips"
+        "welcome"
       ],
       "icons": {
         "welcome": "home",
