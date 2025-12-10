@@ -32,6 +32,7 @@
         "Credits",
         "Features-and-integrations",
         "TroubleShooting",
+        "Payments",
         "FAQ"
       ],
       "icons": {
@@ -42,6 +43,7 @@
         "Credits": "scan",
         "Features-and-integrations": "scan",
         "TroubleShooting": "message-square",
+        "Payments": "card",
         "FAQ": "message-square"
       }
     }
