@@ -30,7 +30,7 @@
         "Publishing",
         "Version-history",
         "Credits",
-        "Payments",
+        "Plans and billing",
         "Features-and-integrations",
         "TroubleShooting",
         "FAQ"
@@ -41,7 +41,7 @@
         "Publishing": "scan",
         "Version-history": "history",
         "Credits": "scan",
-         "Payments": "scan",
+         "Plans and billing": "scan",
         "Features-and-integrations": "scan",
         "TroubleShooting": "message-square",
         "FAQ": "message-square"
