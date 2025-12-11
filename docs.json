@@ -71,10 +71,8 @@
   
   "footer": {
     "socials": {
-      "x": "https://x.com/example",
-      "linkedin": "https://www.linkedin.com/company/example",
-      "github": "https://github.com/example",
-      "slack": "https://example.com/community"
+      "x": "https://x.com/kineto_app",
+      "instagram": "https://www.instagram.com/p/DSH0DUKCEsN/?igsh=bjBpNXpseTdrOTBw"
     },
     "links": [
       {
@@ -106,8 +104,8 @@
             "href": "https://example.com/blog"
           },
           {
-            "label": "Privacy Policy",
-            "href": "https://example.com/legal/privacy"
+            "label": "Terms of Service",
+            "href": "https://kineto.app/legal/terms-of-service"
           }
         ]
       }
