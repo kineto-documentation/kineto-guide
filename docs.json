@@ -30,9 +30,9 @@
         "Publishing",
         "Version-history",
         "Credits",
+        "Payments",
         "Features-and-integrations",
         "TroubleShooting",
-        "Payments",
         "FAQ"
       ],
       "icons": {
@@ -41,9 +41,9 @@
         "Publishing": "scan",
         "Version-history": "history",
         "Credits": "scan",
+         "Payments": "scan",
         "Features-and-integrations": "scan",
         "TroubleShooting": "message-square",
-        "Payments": "card",
         "FAQ": "message-square"
       }
     }
@@ -52,7 +52,7 @@
   "logo": {
     "light": "/images/logo-light.svg",
     "dark": "/images/logo-light.svg",
-    "href": "https://kineto.app/"
+    "href": "https://kineto.dev/"
   },
 
   "navbar": {
@@ -65,11 +65,53 @@
     "primary": {
       "type": "button",
       "label": "Get Started",
-      "href": "https://kineto.app/"
+      "href": "https://kineto.dev/"
     }
   },
   
   "footer": {
+    "socials": {
+      "x": "https://x.com/example",
+      "linkedin": "https://www.linkedin.com/company/example",
+      "github": "https://github.com/example",
+      "slack": "https://example.com/community"
+    },
+    "links": [
+      {
+        "header": "Resources",
+        "items": [
+          {
+            "label": "Customers",
+            "href": "https://example.com/customers"
+          },
+          {
+            "label": "Enterprise",
+            "href": "https://example.com/enterprise"
+          },
+          {
+            "label": "Request Preview",
+            "href": "https://example.com/preview"
+          }
+        ]
+      },
+      {
+        "header": "Company",
+        "items": [
+          {
+            "label": "Careers",
+            "href": "https://example.com/careers"
+          },
+          {
+            "label": "Blog",
+            "href": "https://example.com/blog"
+          },
+          {
+            "label": "Privacy Policy",
+            "href": "https://example.com/legal/privacy"
+          }
+        ]
+      }
+    ]
   },
   "integrations": {
     "ga4": {
