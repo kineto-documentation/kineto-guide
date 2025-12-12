@@ -79,38 +79,14 @@
         "header": "Resources",
         "items": [
           {
-            "label": "Customers",
-            "href": "https://example.com/customers"
-          },
-          {
-            "label": "Enterprise",
-            "href": "https://example.com/enterprise"
-          },
-          {
-            "label": "Request Preview",
-            "href": "https://example.com/preview"
-          }
-        ]
-      },
-      {
-        "header": "Company",
-        "items": [
-          {
-            "label": "Careers",
-            "href": "https://example.com/careers"
-          },
-          {
-            "label": "Blog",
-            "href": "https://example.com/blog"
-          },
-          {
             "label": "Terms of Service",
             "href": "https://kineto.app/legal/terms-of-service"
-          }
+            }
         ]
       }
     ]
   },
+    
   "integrations": {
     "ga4": {
       "measurementId": "G-XXXXXXXXXX"
