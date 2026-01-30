@@ -10,45 +10,29 @@
   },
 
   "navigation": {
-  "groups": [
-    {
-      "group": "Getting started",
-      "expanded": false,
-      "pages": [
-        "welcome"
-      ],
-      "icons": {
-        "welcome": "home",
-        "tips": "lightbulb"
+    "groups": [
+      {
+        "group": "Getting started",
+        "expanded": false,
+        "pages": [
+          "welcome"
+        ]
+      },
+      {
+        "group": "How to Kineto?",
+        "pages": [
+          "First-version",
+          "Editing",
+          "Publishing",
+          "Version-history",
+          "Payments",
+          "Features-and-integrations",
+          "TroubleShooting",
+          "FAQ"
+        ]
       }
-    },
-    {
-      "group": "How to Kineto?",
-      "pages": [
-        "First-version",
-        "Editing",
-        "Publishing",
-        "Version-history",
-        "Credits",
-        "Payments",
-        "Features-and-integrations",
-        "TroubleShooting",
-        "FAQ"
-      ],
-      "icons": {
-        "First-version": "message-square",
-        "Editing": "message-square",
-        "Publishing": "scan",
-        "Version-history": "history",
-        "Credits": "scan",
-         "Payments": "scan",
-        "Features-and-integrations": "scan",
-        "TroubleShooting": "message-square",
-        "FAQ": "message-square"
-      }
-    }
-  ]
-},
+    ]
+  },
   "logo": {
     "light": "/images/logo-light.svg",
     "dark": "/images/logo-light.svg",
