@@ -12,13 +12,6 @@
   "navigation": {
     "groups": [
       {
-        "group": "Getting started",
-        "expanded": false,
-        "pages": [
-          "welcome"
-        ]
-      },
-      {
         "group": "How to Kineto?",
         "pages": [
           "First-version",
@@ -28,7 +21,8 @@
           "Payments",
           "Features-and-integrations",
           "TroubleShooting",
-          "FAQ"
+          "FAQ",
+          "legal-questions"
         ]
       }
     ]
