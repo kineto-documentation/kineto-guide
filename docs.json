@@ -12,7 +12,16 @@
   "navigation": {
     "groups": [
       {
+        "group": "Kinetik",
+        "pages": [
+          "what-is-kinetik",
+          "faq",
+          "contact-us"
+        ]
+      },
+      {
         "group": "How to Kineto?",
+        "expanded": true,
         "pages": [
           "what-is-kineto",
           "First-version",
@@ -23,8 +32,7 @@
           "Features-and-integrations",
           "TroubleShooting",
           "FAQ",
-          "legal-questions",
-          "contact-us"
+          "legal-questions"
         ]
       }
     ]
