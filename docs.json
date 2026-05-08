@@ -13,6 +13,7 @@
     "groups": [
       {
         "group": "Kinetik",
+        "expanded": true,
         "pages": [
           "what-is-kinetik",
           "faq",
@@ -20,8 +21,7 @@
         ]
       },
       {
-        "group": "How to Kineto?",
-        "expanded": true,
+        "group": "Kineto",
         "pages": [
           "what-is-kineto",
           "First-version",
