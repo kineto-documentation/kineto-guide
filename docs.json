@@ -10,7 +10,7 @@
   },
 
   "navigation": {
-    "groups": [
+    "pages": [
       {
         "group": "Kinetik",
         "expanded": true,
@@ -18,8 +18,8 @@
           "what-is-kinetik",
           "faq",
           "Pricing",
-          "kinetik-for-business",
-          "contact-us"
+          "contact-us",
+          "kinetik-for-business"
         ]
       },
       {
@@ -36,7 +36,8 @@
           "FAQ",
           "legal-questions"
         ]
-      }
+      },
+      "untitled-page"
     ]
   },
   "logo": {
