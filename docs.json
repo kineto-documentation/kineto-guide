@@ -10,7 +10,7 @@
   },
 
   "navigation": {
-    "pages": [
+    "groups": [
       {
         "group": "Kinetik",
         "expanded": true,
@@ -36,14 +36,13 @@
           "FAQ",
           "legal-questions"
         ]
-      },
-      "untitled-page"
+      }
     ]
   },
   "logo": {
     "light": "/images/logo-light.svg",
     "dark": "/images/logo-light.svg",
-    "href": "https://kineto.dev/"
+    "href": "https://kineto.app"
   },
 
   "navbar": {
