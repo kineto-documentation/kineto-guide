@@ -1,0 +1,86 @@
+---
+title: "Use Kinetik from Claude and ChatGPT "
+description: "Connect your Kinetik agents to Claude, ChatGPT, and other MCP clients — setup, what the connector can and can't do, access control, and disconnecting."
+---
+
+# Use Kinetik from Claude and ChatGPT
+
+_Your Kinetik agents, reachable from the AI chat you already use._
+
+Kinetik lives in your messenger — but your other AI tools can reach it too. The Kinetik connector lets any assistant that speaks [MCP](https://modelcontextprotocol.io) — Claude, ChatGPT, and coding tools like Claude Code or Cursor — talk to your Kinetik agents: the one you've trained on your own context, and the ones other people have shared with you.
+
+One connection covers all of them. You sign in once; which agents you can reach — and what each one is allowed to do — is decided by how they were shared, not by the connector.
+
+**What you need**
+
+- A **Kineto account** — free to start.
+- **At least one agent**: your own Kinetik or an agent claimed from someone's share link. You can also connect first — agents you add later show up automatically.
+
+## Connect from Claude
+
+1. In Claude, open **Settings → Connectors → Add custom connector** and paste `https://kineto.app/api/agents/mcp`. (Once Kinetik is listed in the connectors directory, you'll be able to add it from there in one click.)
+2. Claude opens the Kineto consent page. Sign in (Google is the usual way) and review the agents this connection will reach.
+3. Approve, then ask Claude to _"list my Kinetik agents"_ — you're connected.
+
+On Claude Team and Enterprise plans, a workspace admin may need to approve custom connectors first. The connector uses standard OAuth: once approved for the workspace, each person signs in as themselves — nobody shares credentials.
+
+## Connect from ChatGPT
+
+1. Turn on **Developer mode**: Settings → Apps & Connectors → Advanced settings → Developer mode (on a workspace, an admin enables it).
+2. Back in **Connectors**, choose **Create** and paste `https://kineto.app/api/agents/mcp`. Leave the OAuth client ID and secret blank — Kinetik registers your client automatically.
+3. Sign in on the Kineto consent page and approve.
+
+## Coding tools
+
+Claude Code, Cursor, Codex and other MCP clients can connect to a single agent through its **share link** — the link page shows ready-to-paste setup for each tool. That flow is separate from the account connector on this page and works the same as before.
+
+## What the connector can do
+
+Exactly three tools — nothing hidden:
+
+| Tool | What it does | Access |
+| :-- | :-- | :-- |
+| `list_agents` | Lists the agents you can reach — handle, name, what they do, and your access level for each. | Read-only |
+| `send_message` | Sends a task to one agent. The only tool that _does_ things: the agent may act through its own authorized tools, so your assistant confirms first. | Write |
+| `wait_for_reply` | Picks up the agent's reply. Replies are never lost — reconnecting later resumes exactly where you left off. | Read-only |
+
+## Try it
+
+Three prompts that exercise the whole connector, and what to expect:
+
+**"Show me the Kinetik agents available to me and what each one can help with."**<br />→ A list of your agents with their handles (like `@my-agent`), whether each is yours or shared, and its access level. Uses `list_agents`.
+
+**"Ask @my-agent kinetik to plan my content for next week — priorities are the product launch and two collab posts."**<br />→ Your assistant confirms the send, the agent works for a minute or two, and a structured plan comes back — built on the context your agent already knows. Uses `send_message` and `wait_for_reply`.
+
+**"Ask the same agent to make Thursday lighter."**<br />→ A revised plan in the same conversation — earlier constraints are preserved, nothing needs re-explaining.
+
+## How access control works
+
+Every agent carries an access level set by its owner in Kinetik. The connector enforces it and can't change it:
+
+- **Read-only** — the agent chats and looks things up, but won't use its other tools or change anything. Shared agents answer strictly from the knowledge their owner gave them — and say so when they don't know.
+- **Full access** — the agent can act and use its tools, applying its own judgment.
+- **Unrestricted** — owner-equivalent access to your _own_ agent: it acts on your requests directly instead of checking back with you first.
+
+Requests arriving through the connector are treated as third-party requests unless the access level says otherwise: an agent won't hand out its owner's private data, credentials, or account details to a read-only connection.
+
+## Known limitations
+
+- **Agents take their time.** Kinetik agents are autonomous — they research, use tools, and think. A real task can take a minute or two; your assistant polls for the reply automatically. _"Still running"_ is normal, and nothing is lost if you come back later.
+- **Text in, text out.** The account connector doesn't transfer files yet. (Coding tools connected through a share link can upload files.)
+- **No account management.** The connector can't create agents, change what an agent is allowed to do, or manage your Kineto account — all of that stays in Kinetik, in the owner's hands.
+- **Routing tip.** If your assistant answers by itself instead of using Kinetik, say so explicitly: _"Use Kinetik to list my agents first."_ Naming the agent (`@my-agent`) also helps.
+
+## Privacy and data
+
+The connector accesses only what its function needs: your agent list and the messages you exchange with agents. It doesn't read your assistant's other conversations, memory, or files, and it doesn't handle payment or health data. Details: [Privacy Policy](https://kineto.app/legal/privacy-notice) · [Terms of Service](https://kineto.app/legal/terms-of-service).
+
+## Disconnecting
+
+- **From your assistant** — remove the Kinetik connector in its settings; access stops immediately.
+- **From Kineto** — open **Personal → Connectors** to see every AI client connected to your account and every shared agent you've claimed, and disconnect either one.
+- **As an agent owner** — revoke a share in Kinetik and the agent disappears from the recipient's connector, mid-conversation included.
+
+## Questions?
+
+Write to [help@kineto.app](mailto:help@kineto.app) — or ask Kinetik in chat to connect you with support.
