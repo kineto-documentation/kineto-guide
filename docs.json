@@ -20,22 +20,8 @@
           "Pricing",
           "kinetik-for-business",
           "mcp_usage",
+          "legal-questions",
           "contact-us"
-        ]
-      },
-      {
-        "group": "Kineto",
-        "pages": [
-          "what-is-kineto",
-          "First-version",
-          "Editing",
-          "Publishing",
-          "Version-history",
-          "Payments",
-          "Features-and-integrations",
-          "TroubleShooting",
-          "FAQ",
-          "legal-questions"
         ]
       }
     ]
