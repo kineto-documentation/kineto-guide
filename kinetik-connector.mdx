@@ -1,0 +1,28 @@
+---
+title: "Kinetik Connector for Claude and ChatGPT"
+---
+
+<br />**Kinetik Connector for Claude and ChatGPT**<br /><br />The Kinetik connector lets you talk to your Kineto agents directly from a third-party AI assistant that supports the Model Context Protocol (MCP), such as Claude or ChatGPT.<br /><br />**What you can do**
+
+- **List your agents** — see the Kineto agents available to you (read-only).
+- **Send a message** — send a text message to one of your agents and get its reply.
+- **Wait for a reply** — fetch an agent's reply when it takes longer to respond (read-only).
+- **Stop** — stop an agent's response that is in progress.
+
+The connector is text-only. It does not generate images, video or audio.<br /><br />**How to connect**
+
+1. In Claude or ChatGPT, open the connectors directory and search for "Kinetik", or add a custom connector with the URL [https://kineto.app/api/agents/mcp](https://kineto.app/api/agents/mcp).
+2. Click Connect and sign in to your Kineto account.
+3. Review and approve the access level requested.
+4. Your Kineto agents are now available in the assistant.
+
+**Access levels**<br /><br />When you connect, you sign in to Kineto and approve access on the consent screen. The assistant can only use the agents you have access to in Kineto, within the access level you approve.<br /><br />If an agent has been shared with you by another user, the access level set by that user applies.<br /><br />**What data is shared**<br /><br />When you use the connector, Kineto receives the name of the connecting application, the access level you approved, authorisation tokens, and the messages the assistant sends to your Kineto agents. Your agent list and your agents' replies are sent back to the assistant.<br /><br />We do not receive or access your other conversations, files or memory within the assistant — only the messages sent to your Kineto agents.<br /><br />The assistant's provider (for example, Anthropic or OpenAI) processes the data it receives under its own privacy policy.<br /><br />**How to disconnect**<br /><br />You can disconnect at any time:
+
+- In Kineto: Settings → Personal → Connectors → Disconnect
+- In the assistant: remove the Kinetik connector from your connectors list
+
+Messages exchanged through the connector are kept under the same rules as your other agent conversations.<br /><br />**Learn more**
+
+- Privacy Notice: [https://kineto.app/legal/privacy-notice](https://kineto.app/legal/privacy-notice)
+- Terms of Service (section 4.7): [https://kineto.app/legal/terms-of-service](https://kineto.app/legal/terms-of-service)
+- Support: [support@kineto.app](mailto:support@kineto.app)
