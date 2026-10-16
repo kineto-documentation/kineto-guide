@@ -1,27 +1,54 @@
 ---
-title: "Kinetik Connector for Claude and ChatGPT"
+title: "Kinetik MCP Connector"
 ---
 
-<br />**Kinetik Connector for Claude and ChatGPT**<br /><br />The Kinetik connector lets you talk to your Kineto agents directly from a third-party AI assistant that supports the Model Context Protocol (MCP), such as Claude or ChatGPT.<br /><br />**What you can do**
+The Kinetik connector lets Claude use your Kinetik skills. They run in your own private cloud sandbox, which keeps your files and work between chats. With them you can create images, carousels and videos, research what's trending, and publish to your connected social accounts. Results are shown in an interactive view in the chat.
 
-- **List your agents** — see the Kineto agents available to you (read-only).
-- **Send a message** — send a text message to one of your agents and get its reply.
-- **Wait for a reply** — fetch an agent's reply when it takes longer to respond (read-only).
-- **Stop** — stop an agent's response that is in progress.
+<Note>
+  Using ChatGPT? See [Kinetik MCP Connector for ChatGPT](/kinetik-mcp-connector-for-chat-gpt).
+</Note>
 
-The connector is text-only. It does not generate images, video or audio.<br /><br />**How to connect**
+## What you can do
 
-1. In Claude or ChatGPT, open the connectors directory and search for "Kinetik", or add a custom connector with the URL [https://kineto.app/api/agents/mcp](https://kineto.app/api/agents/mcp).
-2. Click Connect and sign in to your Kineto account.
-3. Review and approve the access level requested.
-4. Your Kineto agents are now available in the assistant.
+| Tool | What it does | Changes anything? |
+| --- | --- | --- |
+| **Find the user's skills** / **Load a skill** | Lists your installed Kinetik skills and loads one's instructions. | No (read-only) |
+| **Find a skill the user could install** | Searches skills you don't have yet. Installing one is up to you. | No (read-only) |
+| **Run a command in the Charms sandbox** | Runs a skill's command in your private cloud sandbox, for example to make a carousel. | Yes: creates or changes files in your sandbox |
+| **Check / list / cancel a background job** | Follows longer work, such as a video, until it is done, or stops it. | Cancel stops a running job |
+| **Read / list files** | Reads and lists files in your sandbox. | No (read-only) |
+| **Write / edit / delete a file** | Changes text files in your sandbox, or deletes a file. | Yes: in your sandbox only |
+| **Send a file to the Charms sandbox** | Puts a file you give it, such as a photo or a PDF, into your sandbox. | Yes: in your sandbox only |
+| **Show the user a rendered view** | Shows images, galleries, videos, media projects, upload forms and connection cards. | No (read-only) |
 
-**Access levels**<br /><br />When you connect, you sign in to Kineto and approve access on the consent screen. The assistant can only use the agents you have access to in Kineto, within the access level you approve.<br /><br />If an agent has been shared with you by another user, the access level set by that user applies.<br /><br />**What data is shared**<br /><br />When you use the connector, Kineto receives the name of the connecting application, the access level you approved, authorisation tokens, and the messages the assistant sends to your Kineto agents. Your agent list and your agents' replies are sent back to the assistant.<br /><br />We do not receive or access your other conversations, files or memory within the assistant — only the messages sent to your Kineto agents.<br /><br />The assistant's provider (for example, Anthropic or OpenAI) processes the data it receives under its own privacy policy.<br /><br />**How to disconnect**<br /><br />You can disconnect at any time:
+Publishing to a social account is done by a skill and needs that account to be connected first. Kinetik asks for the connection with a card in the chat.
 
-- In Kineto: Settings → Personal → Connectors → Disconnect
-- In the assistant: remove the Kinetik connector from your connectors list
+## How to connect
 
-Messages exchanged through the connector are kept under the same rules as your other agent conversations.<br /><br />**Learn more**
+1. In Claude, open **Settings → Connectors**, search the directory for **Kinetik** and click **Add**. Or choose **Add custom connector** and enter `https://kineto.app/api/agents/mcp`.
+2. Click **Connect** and sign in to your Kineto account.
+3. Review and approve the access requested.
+
+## What data is shared
+
+When you use the connector, Kineto receives:
+
+- the requests Claude sends to Kinetik's tools, such as commands for your skills;
+- the files you send to your sandbox;
+- the access you approved and the authorisation tokens.
+
+Kinetik sends back the results, your files and links to them. Links open only for you, signed in to Kineto.
+
+Kinetik does not receive your other Claude conversations, files or memory. It sees only what is sent to its tools.
+
+Your sandbox and the content in it are stored in your Kineto account, as described in the [Privacy Notice](https://kineto.app/legal/privacy-notice). Anthropic processes the data it receives under its own privacy policy.
+
+## How to disconnect
+
+- **In Kineto:** Settings → Personal → Connectors → Disconnect.
+- **In Claude:** remove the Kinetik connector from your connectors.
+
+## Learn more
 
 - Privacy Notice: [https://kineto.app/legal/privacy-notice](https://kineto.app/legal/privacy-notice)
 - Terms of Service (section 4.7): [https://kineto.app/legal/terms-of-service](https://kineto.app/legal/terms-of-service)
